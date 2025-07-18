@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo">Cartify</div>
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Cart</a>
+  </nav>
+</header>
+
+<main class="main-container">
+  <section class="product-list">
+    <h2>Products</h2>
+
+    <div class="product-item" data-name="Apple Juice" data-price="120" data-size="250ml" data-image="3app.jpeg">
+      <img src="3app.jpeg" alt="Apple Juice">
+      <div class="item-info">
+        <h3>Apple Juice</h3>
+        <p>250ml</p>
+        <p>Rs 120/-</p>
+        <button class="add-button">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-item" data-name="Grapes Juice" data-price="100" data-size="250ml" data-image="2.png">
+      <img src="2.png" alt="Grapes Juice">
+      <div class="item-info">
+        <h3>Grapes Juice</h3>
+        <p>250ml</p>
+        <p>Rs 100/-</p>
+        <button class="add-button">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-item" data-name="Frooti Drink" data-price="10" data-size="125ml" data-image="nnfrooti.avif">
+      <img src="nnfrooti.avif" alt="Frooti Drink">
+      <div class="item-info">
+        <h3>Frooti Drink</h3>
+        <p>125ml</p>
+        <p>Rs 10/-</p>
+        <button class="add-button">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-item" data-name="Paper Boat Pomegranate Juice" data-price="45" data-size="600ml" data-image="nnn.jpg">
+      <img src="nnn.jpg" alt="Paper boat pomegranate">
+      <div class="item-info">
+        <h3>Paper Boat Pomegranate</h3>
+        <p>600ml</p>
+        <p>Rs 45/-</p>
+        <button class="add-button">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-item" data-name="Paper Boat Jamun Juice" data-price="53" data-size="200ml" data-image="jamun juice.webp">
+      <img src="jamun juice.webp" alt="Jamun Juice">
+      <div class="item-info">
+        <h3>Paper Boat Jamun</h3>
+        <p>200ml</p>
+        <p>Rs 53/-</p>
+        <button class="add-button">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-item" data-name="Red Bull Energy Drink" data-price="125" data-size="250ml" data-image="1r.png">
+      <img src="1r.png" alt="Red Bull">
+      <div class="item-info">
+        <h3>Red Bull</h3>
+        <p>250ml</p>
+        <p>Rs 125/-</p>
+        <button class="add-button">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-item" data-name="Monster Energy" data-price="110" data-size="350ml" data-image="nmon.png">
+      <img src="nmon.png" alt="Monster">
+      <div class="item-info">
+        <h3>Monster Energy</h3>
+        <p>350ml</p>
+        <p>Rs 110/-</p>
+        <button class="add-button">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-item" data-name="Thums Up" data-price="45" data-size="750ml" data-image="thums up.webp">
+      <img src="thums up.webp" alt="Thums Up">
+      <div class="item-info">
+        <h3>Thums Up</h3>
+        <p>750ml</p>
+        <p>Rs 45/-</p>
+        <button class="add-button">Add to Cart</button>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="cart-container">
+    <h2>Shopping Cart</h2>
+    <div id="cart-items"></div>
+    <div class="cart-summary">
+      <p>Sub-Total: Rs <span id="subtotal">0.00</span></p>
+      <button class="checkout">Checkout</button>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
